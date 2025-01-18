@@ -8,6 +8,11 @@ class BooksToScrapeComSpider(Spider):
     start_urls = [
         "http://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
     ]
+    metadata = {
+    "title": "My Demo Template",
+    "description": "This is a Demo template.",
+    "template": True,
+    }
 
     # Method to parse the response from the initial URL
     def parse(self, response):
